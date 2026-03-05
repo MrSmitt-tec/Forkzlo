@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Zlo4NET</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net462</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>14.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Zlo4NET.Resources.gameModes.json" />
+    <None Remove="Zlo4NET.Resources.maps.json" />
+    <None Remove="Zlo4NET.Resources.run.json" />
+    <None Remove="Zlo4NET.Resources.shared.map.json" />
+    <None Remove="Zlo4NET.Resources.shared.gamemode.json" />
+    <None Remove="Zlo4NET.Resources.stats.template.json" />
+    <None Remove="Zlo4NET.Resources.stats.bf4_details.json" />
+    <EmbeddedResource Include="Zlo4NET.Resources.gameModes.json" LogicalName="Zlo4NET.Resources.gameModes.json" />
+    <EmbeddedResource Include="Zlo4NET.Resources.maps.json" LogicalName="Zlo4NET.Resources.maps.json" />
+    <EmbeddedResource Include="Zlo4NET.Resources.run.json" LogicalName="Zlo4NET.Resources.run.json" />
+    <EmbeddedResource Include="Zlo4NET.Resources.shared.map.json" LogicalName="Zlo4NET.Resources.shared.map.json" />
+    <EmbeddedResource Include="Zlo4NET.Resources.shared.gamemode.json" LogicalName="Zlo4NET.Resources.shared.gamemode.json" />
+    <EmbeddedResource Include="Zlo4NET.Resources.stats.template.json" LogicalName="Zlo4NET.Resources.stats.template.json" />
+    <EmbeddedResource Include="Zlo4NET.Resources.stats.bf4_details.json" LogicalName="Zlo4NET.Resources.stats.bf4_details.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Core" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>D:\Battlefield 4\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
